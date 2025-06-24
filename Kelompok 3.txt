@@ -1,0 +1,5 @@
+Kelompok 3
+Zharfan Ajda Backend & Frontend Developer: Membantu semua tugas baik backend maupun frontend.
+Rihsan Fajar Backend Developer: Mengatur proses di balik aplikasi seperti peminjaman, pengembalian, dan pengelolaan data alat.
+Andhika Chandra	Frontend & Dokumentasi: Mendesain Aplikasi Menulis dokumentasi aplikasi agar berjalan lancar
+Ade Maulana	Frontend & Dokumentasi: Mendesain Aplikasi Menulis dokumentasi aplikasi agar berjalan lancar
