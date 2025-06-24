@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@drawable/white_background"
+        android:padding="50dp"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- - ---- Masuk ---- - -"
+            android:textSize="35sp"
+            android:textColor="#565656"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/goodfishbold"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etNim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIM"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext"
+            android:inputType="number"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

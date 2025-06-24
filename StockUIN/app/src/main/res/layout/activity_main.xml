@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            
+            <TextView
+                android:text="Macam-Macam Perlengkapan Mahasiswa"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#565656"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/goodfishbold"
+                android:layout_gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBarang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                tools:listitem="@layout/item_barang" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnPinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pinjam Barang"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white" />
+    <Button
+        android:id="@+id/btnKembalikan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembalikan Barang"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white" />
+
+    <!-- Tombol Pinjam + Bottom Navigation -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="8dp">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <!-- // bottom navigation buttons -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <!-- Home Button -->
+                <LinearLayout
+                    android:id="@+id/nav_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/home" />
+                </LinearLayout>
+
+                <!-- Inventory Button -->
+                <LinearLayout
+                    android:id="@+id/nav_inventory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:src="@mipmap/inventory" />
+                </LinearLayout>
+
+                <!-- History Button -->
+                <LinearLayout
+                    android:id="@+id/nav_history"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/history" />
+                </LinearLayout>
+
+                <!-- Profile Button -->
+                <LinearLayout
+                    android:id="@+id/nav_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/profile" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+        android:background="#E9E9E9">
+
+    <TextView
+        android:text="---Inventory INFO---"
+        android:textSize="22sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#565656"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/goodfish"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rvInventory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
